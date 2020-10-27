@@ -35,9 +35,20 @@ naqeb.on("ready", () => {
   console.log("");
 });
 
+
 naqeb.on("guildMemberAdd", member => {
   let welcomer = member.guild.channels.find(
-    channel => channel.name === "welcome" /// naqeb | hama
+    channel => channel.name === "welcome"
+  );
+  if (!welcomer) return;
+  if (welcomer) {
+    welcomer.send(` > Welcome <@${member.user.id}> To ${member.guild.name}`);
+  }
+});
+
+naqeb.on("guildMemberAdd", member => {
+  let welcomer = member.guild.channels.find(
+    channel => channel.name === "welcome" /// naqeb 
   );
   if (!welcomer) return;
   if (welcomer) {
