@@ -268,4 +268,4 @@ naqeb.on("message", message => {
   }
 });
 
-naqeb.login("");
+naqeb.login("NzY4OTY1NzAyMDE0OTkyMzg1.X5IJHg.B2b47gfRrD4c9nKGoCciTLKKcVc");
